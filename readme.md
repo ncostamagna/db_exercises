@@ -14,3 +14,7 @@ user: root
 pass: root
 db:   db_exercises
 ```
+
+## DER
+
+<img src="./db_exercises.png">
