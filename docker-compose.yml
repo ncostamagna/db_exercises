@@ -1,0 +1,12 @@
+services:
+  db_exercises:
+    image: postgres:latest
+    container_name: db_exercises
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: db_exercises
+    ports:
+      - "5440:5432"
+    volumes:
+      - ./.dockers/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
